@@ -1,0 +1,479 @@
+*{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p{
+  font-size: 15px;
+}
+
+#hero-page{
+  width: 100%;
+  height: 100vh;
+
+}
+
+.home ul{
+  text-decoration: none;
+  display: flex;
+  margin: 2% 0 0 5%;
+  list-style: none;
+  gap: 10px;
+  
+}
+
+.name{
+  text-align: center;
+}
+
+.hello{
+  font-size: 25px;
+  padding: 8% 0 3% 0;
+}
+
+.welcome{
+  font-size: 100px;
+}
+
+.marketer{
+  padding-top: 5%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+span{
+  color: #FF748D;
+}
+
+/* end of home page */
+
+/* start of about page */
+
+
+#About{
+  display: flex;
+  padding: 20px 100px;
+  margin: 0px 50px;
+  justify-content: space-between;
+}
+
+.about-me{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h4{
+  margin: 20px 50px 0px 50px ;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h5{
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.btn1{
+  width: 150px;
+  height: 30px;
+  background: #FF748D;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: 1s;
+  color: white;
+  text-align: center;
+  /* padding: 20px 30px; */
+}
+
+.btn1:hover{
+  background: transparent;
+  border: 1px solid #FF748D;
+  color: black;
+}
+
+/* end of about page */
+
+/* start of services page */
+
+.project{
+  margin: 20px 100px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+}
+
+.card{
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  background: #FF748D;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.card h5{
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.market p{
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+/* end of services */
+
+/* start of hiring page */
+
+#hiring{
+  width: 100%;
+}
+
+.display-1{
+  margin: 20px 100px;
+  font-size: 25px;
+}
+
+.hire{
+  display: flex;
+  justify-content: space-around;
+}
+
+.h3{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btn{
+  width: 150px;
+  height: 30px;
+  background: #FF748D;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: 1s;
+  color: white;
+  text-align: center;
+}
+
+.btn:hover{
+  background: transparent;
+  border: 1px solid #FF748D;
+  color: black;
+}
+
+.get-in-touch{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.phone{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.address{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-address{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* end of hiring page */
+
+/* start of footer */
+
+#footer{
+  background: black;
+  height: 5vh;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+}
+
+.reserved{
+  font-size: 12px;
+}
+
+/* end of footer */
+
+/* media query home */
+
+@media screen and (max-width: 1200px) {
+  #hero-page{
+    width: 100%;
+  }
+
+  .home ul{
+    justify-content: center;
+  }
+
+  .name .hello{
+    font-size: 30px;
+  }
+
+  .name .welcome{
+    font-size: 70px;
+  }
+  
+  .name .marketer{
+    font-size: 40px;
+    padding: 5% 0 10% 0;
+    font-weight: bold; 
+  }
+
+  #About{
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  h4{
+    margin: 0;
+  }
+
+  h5{
+    text-align: center;
+  }
+
+  .img{
+    width: 60%;
+    padding-left: 100px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  #hero-page{
+    width: 100%;
+    height: auto;
+  }
+
+  .home ul{
+    justify-content: center;
+  }
+
+  .name .hello{
+    font-size: 20px;
+  }
+
+  .name .welcome{
+    font-size: 50px;
+  }
+  
+  .name .marketer{
+    font-size: 30px;
+    padding: 5% 0 10% 0;
+    font-weight: bold;
+    
+  }
+
+  #About{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img{
+    width: 50%;
+    margin: 20px;
+  }
+
+  h5{
+    text-align: center;
+  }
+
+  #hiring{
+    width: 100%;
+  }
+
+  .hire{
+    display: flex;
+    flex-direction: column;
+    align-items: enter;
+    justify-content: center;
+  }
+
+  .h3{
+    margin-left: 100px;
+  }
+
+  .form{
+    margin: 20px 100px;
+  }
+
+  .get-in-touch{
+    margin: 20px 100px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #hero-page{
+    background: black;
+    width: 100%;
+    height: auto;
+  }
+
+  .home ul{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name .hello{
+    font-size: 15px;
+    color: white;
+  }
+
+  .name .welcome{
+    font-size: 40px;
+    color: white;
+  }
+  
+  .name .marketer{
+    padding: 5% 0 10% 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #About{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-me h4{
+    margin: 15px ;
+    font-size: 20px;
+  }
+
+  .about-me h5{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .bio{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .img{
+    display: none;
+  }
+
+  .project{
+    margin: 15px 50px ;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+  }
+  
+  .card{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    background: #FF748D;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+
+
+  .display-1{
+    margin: 20px 50px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #footer{
+    background: black;
+    height: 5vh;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  
+  }
+
+  .reserved{
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .h3{
+    margin-left: 20px;
+  }
+
+  .form{
+    margin: 20px;
+  }  
+
+  .get-in-touch{
+    margin: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
